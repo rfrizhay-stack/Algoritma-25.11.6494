@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <windows.h>
+
+using namespace std;
+
+int main() {
+    string ucapan = "Happy New Year -- 25.11.6494";
+    for (int i = 0; i < ucapan.length(); i++) {
+        cout << ucapan[i] << flush;
+        Sleep(250);
+    }
+    cout << endl << endl;
+
+    char b = 178;
+    string s = " ";
+    string bl(4, b);
+
+    string map2026[5] = {
+        bl + s + bl + s + bl + s + bl,
+        s + s + s + b + s + b + s + s + b + s + s + s + s + b + s + b + s + s + s,
+        bl + s + b + s + s + b + s + bl + s + bl,
+        b + s + s + s + s + b + s + s + b + s + b + s + s + s + s + b + s + s + b,
+        bl + s + bl + s + bl + s + bl
+    };
+
+    for (int i = 0; i < 5; i++) {
+        cout << map2026[i] << endl;
+    }
+
+    cout << "\nPress any key to continue . . ." << endl;
+    system("pause > nul");
+
+    return 0;
+}
